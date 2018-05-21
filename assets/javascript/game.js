@@ -2,7 +2,7 @@
 
 // Declare variables
 
-var gema1 = 1;
+var gema1 = 0;
 var gema2 = 0;
 var gema3 = 0;
 var gema4 = 0;
@@ -50,14 +50,12 @@ function compareValues(myScore,myNumber){
       reset();                 //call  reset function
       getReady();              // call get ready function
       generateRandomNumber();  //call  generateRandomNumber function
-      alert('You won');
   }else if(myScore > myNumber){ //if myscore is greater than my number, the user loss
       loss++;                  //increment the variable
       $("#loss").text(loss);
       reset();
       getReady();
       generateRandomNumber();
-      alert('You lost');
   }
 }
 
