@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gema game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" /> -->
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
+    <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+  
+    <script src="./assets/javascript/game.js"></script>
+</head>
+<body background = "./assets/images/background.jpg" center center cover no-repeat fixed>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Crystal Colector</h1>
+
+            <div class="row">
+                <h2 class = "instruction">Instructions:</h2>
+                <p> You will be give a random number at        the beginning.
+                    By clicking on a Crystal you will add points to your total score.
+                    You will win the game by matching your total score to random number. You lose if your total score goes above the random number.
+                    The value of each Crystal is hidden from you until you click on it.
+                    Each time when the game starts, the value of each Crystal will change.
+                </p>
+                <br>
+            </div>
+
+            <div class="row">
+                <div class = "col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Number to reach
+                        </div>
+                        <div id = "numberToReach" class="panel-body">
+                            0
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-6">
+                    <div class="panel panel-default">
+                        <div  class="panel-heading">
+                            Score
+                        </div>
+                        <div id = "score" class="panel-body">
+                            0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "crystalContainer"  class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a  id = "gema1container" href="#" class="thumbnail">
+                    <img  id = "gema1" class = "crystal-image" src="./assets/images/gema1.jpg" alt="Gema 1">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a  id = "gema2container" href="#" class="thumbnail">
+                    <img  id = "gema2" class = "crystal-image" src="./assets/images/gema2.jpg" alt="Gema 2">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a   id = "gema3container" href="#" class="thumbnail">
+                    <img id = "gema3" class = "crystal-image" src="./assets/images/gema3.jpg" alt="Gema 3">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a  id = "gema4container" href="#" class="thumbnail">
+                    <img id = "gema4" class = "crystal-image" src="./assets/images/gema4.jpg" alt="Gema 4">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class = " col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Loss
+                        </div>
+                        <div id = 'loss' class="panel-body">
+                            0
+                        </div>
+                    </div>
+                </div>
+    
+                <div class = "col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Wins
+                        </div>
+                        <div id = 'win' class="panel-body">
+                            0
+                        </div>
+                    </div>
+                </div>
+             
+            </div>                         
+        </div>    
+    </div>
+</body>
+</html>

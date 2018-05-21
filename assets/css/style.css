@@ -1,0 +1,38 @@
+
+
+.jumbotron{
+   background-color:aliceblue;
+   /* align-self: auto; */
+   padding: 2%;
+   margin-top: 3%;
+}
+
+h1{
+    margin-top: 0%;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Acme', sans-serif;
+}
+
+
+.crystal-image{
+    width: 150px;
+    height: 100px;
+}
+
+.panel-heading{
+   background-color: black;
+   color: aliceblue;
+   font-family: 'Acme', sans-serif;
+}
+
+
+.panel-heading, .panel-body, .instruction{
+ text-align: center;
+}
+
+
